@@ -13,7 +13,8 @@ body{
 .chat-container{
     width: 100%;
     height : 80%;
-    background-color: rgb(80, 108, 133);
+    /* background-color: #a28089; */
+    background-image: linear-gradient(to bottom,#8458B3,#a28089);
     padding:20px ;
     display: flex;
     flex-direction: column;
@@ -39,11 +40,24 @@ body{
 .user-chat-area{
     width: 90%;
     padding: 20px;
-    background-color: black; 
-    color: aliceblue;
+     
+    background-color: #a0d2eb;
+    background-image: linear-gradient(to right, rgb(155, 253, 253),rgb(99, 136, 255));
+    color: rgb(0, 0, 0);
     border-radius: 40px 0px 40px 40px;
     box-shadow: 2px 2px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
 }
+
+.chooseimg{
+    width: 30%;
+
+}
+
 
 .ai-chat-area{
     width: 90%;

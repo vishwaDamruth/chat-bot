@@ -62,11 +62,12 @@ function createChatBox(html,classes){
 }
 
 
-function handlechatResponse(message){
-    user.message=message
+function handlechatResponse(userMessage){
+    user.message=userMessage
     let html = `<img src="user.png" alt ="" id="userImage" width="50">
         <div class="user-chat-area">
-            ${user.data}
+            ${user.message}
+            ${user.file.data?`<img src="data:${user.file.mime_type};base64,${user.file.data}"class="chooseimg" />` : ""}
         </div>`
 prompt.value=""
 let userChatBox = createChatBox(html,"user-chat-box")
