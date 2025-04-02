@@ -4,10 +4,10 @@ let imagebtn = document.querySelector("#image")
 let imageinput = document.querySelector("#image input")
 
 
-const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyC0wHPolaPPu8wH_eXKWF5aFE-7_xRTKms"
+const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=  [INSERT KEY HERE] _eXKWF5aFE-7_xRTKms"
 
 
-
+//PolaPPu8wH 2
 let user = {
     message:null,
     file:{
@@ -16,7 +16,7 @@ let user = {
     }
 }
 
-
+//AIzaSyC0wH 1
 async function  generateResponse(aiChatBox){
    
 let text = aiChatBox.querySelector(".ai-chat-area")
